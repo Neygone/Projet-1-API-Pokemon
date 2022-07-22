@@ -1,0 +1,128 @@
+:root{
+    --white: #fff;
+    --white-low-opacity: rgba(255, 255, 255, 0.5);
+    --black: #000;
+    --blue: #2D6469;
+    --darkBlue: #0B4247;
+    --orange: #F67B49;
+}
+
+::placeholder{
+    color: var(--white-low-opacity);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    color: var(--orange);
+}
+
+h4, .select{
+    color: var(--white);
+}
+
+.target{
+    border: solid 1px var(--black);
+    border-radius: 50%;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(var(--blue), var(--darkBlue));
+    position: relative;
+    pointer-events: none;
+    user-select: none;
+}
+
+.target img{
+    height: 60%;
+    width: 50%;
+    filter: brightness(0%);
+    font-size: 4em;
+    pointer-events: none;
+    user-select: none;
+}
+
+.container{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.select{
+    background-color: var(--blue);
+    border: solid 1px var(--blue);
+    border-radius: 10px;
+    padding: 1em;
+    text-transform: lowercase;
+}
+
+.btn{
+    background-color: var(--blue);
+    border: solid 1px var(--blue);
+    color: var(--white);
+    height: 20%;
+    padding: 1em;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 10%;
+}
+
+.btn:hover{
+    background-color: var(--darkBlue);
+    border: solid 1px var(--darkBlue);
+}
+
+.score-container{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(rgb(182, 220, 81), rgb(152, 190, 71));
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: solid 1px var(--black);
+}
+
+.pkm-identity-container{
+    border: solid 1px var(--black);
+    background: linear-gradient(rgb(151, 189, 70), rgb(131, 160, 61));
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    pointer-events: none;
+    user-select: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.display{
+    display: block;
+}

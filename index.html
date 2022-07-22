@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 - API Pokémon</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    
+    <h1 style="text-align:center">Guess the Pokémon's shadow</h1>
+    <h4 style="text-align:center">Clique sur le bouton "RANDOM" et trouve à qui appartient l'ombre du Pokémon.</h4>
+    
+    <div class="container" id="container">
+        <select name="select" id="select" class="select"></select>
+        <input type="text" value="" class="select" id="input" placeholder="Enter Pokemon's name"/>
+        <input type="submit" name"submit" value="RANDOM" id="btn" class="btn"/>
+        <input type="submit" name"submit" value="Soumettre" class="hidden btn" id="validate-btn"/>
+    </div>
+    
+    <h3 id="score-container" class="score-container"></h3>
+    
+    <div id="target" class="target">
+        <img src="" id="pkm-sprite" class="hidden"/>
+    </div>
+    
+    <div class="pkm-identity-container" id="pkm-identity-container">
+        <h3 class="pkm-identity" id="pkm-identity"></h3>
+        <img src="" id="visible-sprite"/>
+    </div>
+    
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
